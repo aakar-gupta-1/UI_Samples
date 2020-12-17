@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:ui_for_paprclip/widgets/colorful_bar.dart';
+import 'file:///C:/Users/User/AndroidStudioProjects/ui_for_paprclip/lib/widgets/Summary/colorful_bar.dart';
 import 'package:ui_for_paprclip/widgets/dropdown_menu.dart';
-import 'package:ui_for_paprclip/widgets/moving_average.dart';
-import 'package:ui_for_paprclip/widgets/pivot_points.dart';
-import 'package:ui_for_paprclip/widgets/summary_data.dart';
-import 'package:ui_for_paprclip/widgets/technical_indicators.dart';
+import 'file:///C:/Users/User/AndroidStudioProjects/ui_for_paprclip/lib/widgets/Moving/moving_average.dart';
+import 'file:///C:/Users/User/AndroidStudioProjects/ui_for_paprclip/lib/widgets/Pivot/pivot_points.dart';
+import 'file:///C:/Users/User/AndroidStudioProjects/ui_for_paprclip/lib/widgets/Summary/summary_data.dart';
+import 'file:///C:/Users/User/AndroidStudioProjects/ui_for_paprclip/lib/widgets/Technical/technical_indicators.dart';
 import '../widgets/heading.dart';
 
 class MainScreen extends StatelessWidget {
@@ -51,6 +51,7 @@ class MainScreen extends StatelessWidget {
               TechnicalIndicators(),
               Heading(text: 'Pivot Points'),
               PivotPoints(),
+              Center(child: Text('MADE BY AAKAR',style: TextStyle(color: Colors.grey[500],letterSpacing: 1,wordSpacing: 4),),)
             ],
           ),
         ),

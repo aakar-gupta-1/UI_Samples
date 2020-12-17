@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_for_paprclip/widgets/dropdown_menu.dart';
-import 'buySell.dart';
-import 'table_row.dart';
+import '../buySell.dart';
+import '../table_row.dart';
 
 class MovingAverages extends StatelessWidget {
   @override
