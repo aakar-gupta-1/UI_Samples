@@ -11,9 +11,7 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme
-          .of(context)
-          .backgroundColor,
+      backgroundColor: Theme.of(context).backgroundColor,
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios),
@@ -46,14 +44,7 @@ class MainScreen extends StatelessWidget {
                 ],
               ),
               Heading(text: 'Summary'),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ColorfulBar(),
-                  SummaryData(),
-                ],
-              ),
+              SummaryData(),
               Heading(text: 'Moving Averages'),
               MovingAverages(),
               Heading(text: 'Technical Indicators'),

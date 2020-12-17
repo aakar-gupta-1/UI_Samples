@@ -21,13 +21,13 @@ class PivotPoints extends StatelessWidget {
           child: Text(
             pivotData[i][0],
             style: TextStyle(
-                color: Colors.grey, fontSize: 14, fontWeight: FontWeight.bold),
+                color: Colors.grey, fontSize: 16, fontWeight: FontWeight.bold),
           ),
         ),
         Text(
           pivotData[i][1].toString(),
           style: TextStyle(
-              color: Colors.black, fontWeight: FontWeight.bold, fontSize: 14),
+              color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16),
         ),
       ],
     );
@@ -42,7 +42,7 @@ class PivotPoints extends StatelessWidget {
           child: DropDownMenu(text: 'CLASSIC'),
         ),
         Container(
-          height: 200,
+          height: pivotData.length*33.3,
           child: ListView.builder(
             itemBuilder: (ctx, index) => pivot(index),
             itemCount: pivotData.length,

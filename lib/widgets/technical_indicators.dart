@@ -14,7 +14,7 @@ class TechnicalIndicators extends StatelessWidget {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
           child: Text(
             'Strong Sell',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white,fontSize: 16),
           ),
           color: Color.fromRGBO(255, 46, 80, 1),
         ),
@@ -35,20 +35,27 @@ class TechnicalIndicators extends StatelessWidget {
           children: [
             TableRow(
               children: [
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 4),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'NAME',
-                        style: TextStyle(
-                          color: Colors.grey[700],
-                        ),
-                      ),
-                      Text('ACTION', style: TextStyle(color: Colors.grey[700])),
-                      Text('VALUE', style: TextStyle(color: Colors.grey[700])),
-                    ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 5),
+                  child: Text(
+                    'NAME',
+                    style: TextStyle(color: Colors.grey[700], fontSize: 14),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5),
+                  child: Text(
+                    'ACTION',
+                    style: TextStyle(color: Colors.grey[700], fontSize: 14),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 5),
+                  child: Text(
+                    'VALUE',
+                    style: TextStyle(color: Colors.grey[700], fontSize: 14),
+                    textAlign: TextAlign.right,
                   ),
                 ),
               ],
@@ -56,78 +63,18 @@ class TechnicalIndicators extends StatelessWidget {
                 color: Colors.grey[300],
               ),
             ),
-            RowData.makeRow(
-                'RSI(14)',
-                -53.6549,
-                Text('Neutral',
-                    style: TextStyle(color: Colors.grey[700], fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
-            RowData.makeRow(
-                'STOCH(9,6)',
-                -53.6549,
-                Text('Sell',
-                    style: TextStyle(color: Color.fromRGBO(255, 46, 80, 1), fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
-            RowData.makeRow(
-                'STOCHRSI(14)',
-                -53.6549,
-                Text('Sell',
-                    style: TextStyle(color: Color.fromRGBO(255, 46, 80, 1), fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
-            RowData.makeRow(
-                'MACD(12,26)',
-                -53.6549,
-                Text('Buy',
-                    style: TextStyle(color: Colors.blue, fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
-            RowData.makeRow(
-                'ADX(14)',
-                -53.6549,
-                Text('Sell',
-                    style: TextStyle(color: Color.fromRGBO(255, 46, 80, 1), fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
-            RowData.makeRow(
-                'Williams %R',
-                -53.6549,
-                Text('Sell',
-                    style: TextStyle(color: Color.fromRGBO(255, 46, 80, 1), fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
-            RowData.makeRow(
-                'CCI(14)',
-                -53.6549,
-                Text('Sell',
-                    style: TextStyle(color: Color.fromRGBO(255, 46, 80, 1), fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
-            RowData.makeRow(
-                'ATR(14)',
-                -53.6549,
-                Text('Sell',
-                    style: TextStyle(color: Color.fromRGBO(255, 46, 80, 1), fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
-            RowData.makeRow(
-                'Highs/Lows(14)',
-                -53.6549,
-                Text('Sell',
-                    style: TextStyle(color: Color.fromRGBO(255, 46, 80, 1), fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
-            RowData.makeRow(
-                'Ultimate Oscillator',
-                -53.6549,
-                Text('Sell',
-                    style: TextStyle(color: Color.fromRGBO(255, 46, 80, 1), fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
-            RowData.makeRow(
-                'ROC',
-                -53.6549,
-                Text('Sell',
-                    style: TextStyle(color: Color.fromRGBO(255, 46, 80, 1), fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
-            RowData.makeRow(
-                'Bull/Bear Power(13)',
-                -53.6549,
-                Text('Less Volatility',
-                    style: TextStyle(color: Colors.black, fontSize: 12,fontWeight: FontWeight.bold)),
-                12),
+            RowData.makeRow('RSI(14)', -53.6549, 2),
+            RowData.makeRow('STOCH(9,6)', -53.6549, 0),
+            RowData.makeRow('STOCHRSI(14)', -53.6549, 0),
+            RowData.makeRow('MACD(12,26)', -53.6549, 1),
+            RowData.makeRow('ADX(14)', -53.6549, 0),
+            RowData.makeRow('Williams %R', -53.6549, 0),
+            RowData.makeRow('CCI(14)', -53.6549, 0),
+            RowData.makeRow('ATR(14)', -53.6549, 0),
+            RowData.makeRow('Highs/Lows(14)', -53.6549, 0),
+            RowData.makeRow('Ultimate Oscillator', -53.6549, 0),
+            RowData.makeRow('ROC', -53.6549, 0),
+            RowData.makeRow('Bull/Bear Power(13)', -53.6549, 3),
           ],
         ),
       ],

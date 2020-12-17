@@ -19,14 +19,14 @@ class BuySell extends StatelessWidget {
         Text(
           v,
           style: TextStyle(
-            fontSize: 16,
+            fontSize: 18,
             color: Colors.black,
             fontWeight: FontWeight.bold,
           ),
         ),
         Text(
           txt,
-          style: TextStyle(fontSize: 12, color: Colors.grey),
+          style: TextStyle(fontSize: 14, color: Colors.grey),
         )
       ],
     );
