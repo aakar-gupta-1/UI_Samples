@@ -51,9 +51,12 @@ class ColorfulBar extends StatelessWidget {
     return Row(
       children: [
         Container(
-          height: 66,
-          width: 8,
-          color: cList[i][1],
+          height: 82,
+          width: 12,
+          decoration: BoxDecoration(
+            color: cList[i][1],
+            borderRadius: BorderRadius.vertical(top: (i==0) ? Radius.circular(20): Radius.zero ,bottom: (i==4) ? Radius.circular(20) : Radius.zero),
+          ),
         ),
         (i==index) ? pointerBox(cList[i][0], cList[i][1]) : SizedBox(height: 0.0,width: 0.0,),
       ],
@@ -63,13 +66,11 @@ class ColorfulBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 25),
+      padding: EdgeInsets.only(left: 40),
       child: Container(
-        height: 330,
-        width: 100,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-        ),
+        height: 410,
+        width: 80,
+
         child: ListView.builder(
           itemCount: 5,
           itemBuilder: (ctx, index) => bar(index),

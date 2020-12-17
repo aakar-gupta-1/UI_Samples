@@ -44,6 +44,7 @@ class MovingAverages extends StatelessWidget {
                     'TITLE',
                     style: TextStyle(
                       color: Colors.grey[700],
+                      fontSize: 16,
                     ),
                     textAlign: TextAlign.left,
                   ),
@@ -51,7 +52,8 @@ class MovingAverages extends StatelessWidget {
                 Padding(
                   child: Text(
                     'VALUE',
-                    style: TextStyle(color: Colors.grey[700]),
+                    style: TextStyle(color: Colors.grey[700],
+                      fontSize: 16,),
                     textAlign: TextAlign.center,
                   ),
                   padding: EdgeInsets.symmetric(vertical: 5),
@@ -60,7 +62,7 @@ class MovingAverages extends StatelessWidget {
                   padding: const EdgeInsets.only(right: 5),
                   child: Text(
                     'TYPE',
-                    style: TextStyle(color: Colors.grey[700]),
+                    style: TextStyle(color: Colors.grey[700],fontSize: 16),
                     textAlign: TextAlign.right,
                   ),
                 ),

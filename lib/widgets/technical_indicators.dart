@@ -39,14 +39,14 @@ class TechnicalIndicators extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 5),
                   child: Text(
                     'NAME',
-                    style: TextStyle(color: Colors.grey[700], fontSize: 14),
+                    style: TextStyle(color: Colors.grey[700], fontSize: 16),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 5),
                   child: Text(
                     'ACTION',
-                    style: TextStyle(color: Colors.grey[700], fontSize: 14),
+                    style: TextStyle(color: Colors.grey[700], fontSize: 16),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -54,7 +54,7 @@ class TechnicalIndicators extends StatelessWidget {
                   padding: const EdgeInsets.only(right: 5),
                   child: Text(
                     'VALUE',
-                    style: TextStyle(color: Colors.grey[700], fontSize: 14),
+                    style: TextStyle(color: Colors.grey[700], fontSize: 16),
                     textAlign: TextAlign.right,
                   ),
                 ),

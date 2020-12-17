@@ -9,7 +9,7 @@ class RowData {
         style: TextStyle(
             color: Color.fromRGBO(255, 46, 80, 1),
             fontWeight: FontWeight.bold,
-            fontSize: 14),
+            fontSize: 15),
         textAlign: TextAlign.right,
       ),
     ),
@@ -18,7 +18,7 @@ class RowData {
       child: Text(
         'BUY',
         style: TextStyle(
-            color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 14),
+            color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 15),
         textAlign: TextAlign.right,
       ),
     ),
@@ -27,7 +27,7 @@ class RowData {
       child: Text(
         'Neutral',
         style: TextStyle(
-            color: Colors.grey[700], fontSize: 14, fontWeight: FontWeight.bold),
+            color: Colors.grey[700], fontSize: 15, fontWeight: FontWeight.bold),
         textAlign: TextAlign.right,
       ),
     ),
@@ -36,7 +36,7 @@ class RowData {
       child: Text(
         'Less Volatility',
         style: TextStyle(
-            color: Colors.black, fontSize: 14, fontWeight: FontWeight.bold),
+            color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold),
         textAlign: TextAlign.right,
       ),
     ),
@@ -51,7 +51,7 @@ class RowData {
             title,
             textAlign: TextAlign.left,
             style: TextStyle(
-                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 14),
+                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 15),
           ),
         ),
         Padding(
@@ -61,7 +61,7 @@ class RowData {
               style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
-                  fontSize: 14)),
+                  fontSize: 15)),
         ),
         col[index],
       ],

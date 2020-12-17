@@ -35,8 +35,8 @@ class _SummaryDataState extends State<SummaryData> {
 
   Widget element(int index) {
     return Container(
-      width: 56,
-      height: 36.7,
+      width: 80,
+      height: 45,
       decoration: data[index][1]
           ? BoxDecoration(
               border: Border.all(
@@ -51,7 +51,7 @@ class _SummaryDataState extends State<SummaryData> {
           child: Text(
             data[index][0],
             style: TextStyle(
-                fontSize: 12,
+                fontSize: 13,
                 color: !data[index][1] ? Colors.grey[500] : Colors.black,
                 fontWeight: FontWeight.bold),
           )),
@@ -62,12 +62,13 @@ class _SummaryDataState extends State<SummaryData> {
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         ColorfulBar(index: pos,),
+        SizedBox(width: 50,),
         Container(
           padding: EdgeInsets.only(right: 15),
-          height: 330,
+          height: 410,
           width: 80,
           child: ListView.builder(
             itemCount: 9,
