@@ -55,7 +55,7 @@ class RowData {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
+          padding: const EdgeInsets.symmetric(vertical: 9),
           child: Text(val.toString(),
               textAlign: TextAlign.center,
               style: TextStyle(

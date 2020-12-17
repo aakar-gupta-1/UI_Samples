@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'file:///C:/Users/User/AndroidStudioProjects/ui_for_paprclip/lib/widgets/Summary/colorful_bar.dart';
 import 'package:ui_for_paprclip/widgets/dropdown_menu.dart';
 import 'file:///C:/Users/User/AndroidStudioProjects/ui_for_paprclip/lib/widgets/Moving/moving_average.dart';
 import 'file:///C:/Users/User/AndroidStudioProjects/ui_for_paprclip/lib/widgets/Pivot/pivot_points.dart';
